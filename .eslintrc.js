@@ -6,8 +6,11 @@ module.exports = {
   extends: ["plugin:react/recommended", "airbnb"],
   overrides: [],
   parserOptions: {
-    ecmaVersion: "latest",
+    ecmaVersion: 12,
     sourceType: "module",
+    ecmaFeatures: {
+      modules: true,
+    },
   },
   plugins: ["react"],
   rules: {
